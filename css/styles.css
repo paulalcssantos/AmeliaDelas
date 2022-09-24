@@ -313,4 +313,9 @@ df-messenger {
     --df-messenger-input-box-color: var(--darkMagenta);
     --df-messenger-input-placeholder-font-color: #fff;
     --df-messenger-user-message: var(--mediumVioletRed);
+    
+    margin: 0;
+    padding: 0;
+    right: 0;
+    bottom: -90px;
    }
