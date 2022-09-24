@@ -37,6 +37,7 @@ nav{
 }
 
 nav > a{
+    margin-top: 10px;
     text-decoration: none;
     color: var(--darkMagenta);
     font-weight: 800;
