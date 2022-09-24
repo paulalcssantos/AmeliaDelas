@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+}
+
+:root{
+    --mediumVioletRed: #C71585;
+    --crimson: #DC143C;
+    --lightPink: #FFB6C1;
+    --lightCoral: #F08080;
+    --darkMagenta: #8B008B;
+    --mediumOrchid: #BA55D3;
+    --plum: #DDA0DD;
+}
+
+/*Corpo*/
+
+body{
+    font-family: Nunito, sans-serif;
+    color: #000;
+}
+
+h1, h2, h3{
+    font-family: Asap, sans-serif;
+    color: #000;
+}
+
+/*Navegação*/
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    top: 0;
+    position:sticky;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav > a{
+    text-decoration: none;
+    color: var(--darkMagenta);
+    font-weight: 800;
+    font-size: 40px;
+    font-family: "Sacramento", cursive;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li{
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    text-decoration: none;
+    color: var(--darkMagenta);
+}
+
+/*Cabeçalho*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:  linear-gradient(84deg, #8B008B 20%,rgba(0,0,0,0.4) 87%),url("../img/movimento.jpg")!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    color: #fff;
+}
+
+header p{
+    margin-bottom: 2em; 
+    font-size: larger;
+}
+
+#informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 2em; 
+    font-size: larger;
+}
+
+#informacoes div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#informacoes div p{
+   font-size: large;
+}
+
+/*Dados*/
+
+#banner-dados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:  linear-gradient(84deg, #8B008B 20%,rgba(0,0,0,0.4) 87%),url("../img/varias-mulheres.jpg")!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 2em; 
+    font-size: larger;
+}
+
+#dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dados span{
+    font-size: large;
+}
+
+
+#dados div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#dados div p{
+   font-size: large;
+}
+
+
+/*Amelia Bot*/
+#chatbot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #000;
+}
+
+#chatbot img{
+    width: 64px;
+}
+
+#chatbot h2{
+    color: #000;
+}
+
+#chatbot p{
+    margin-bottom: 0.5em;
+    width: 100%;
+    font-size: large;
+}
+
+/*sobre*/
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #000;
+}
+
+#sobre img{
+    width: 64px;
+}
+
+#sobre h2{
+    color: #000;
+}
+
+#sobre p{
+    margin-bottom: 0.5em;
+    width: 100%;
+    font-size: large;
+}
+
+
+/*contato*/
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #000;
+}
+
+#contato img{
+    width: 64px;
+}
+
+#contato h2{
+    color: #000;
+}
+
+#contato p{
+    margin-bottom: 0.5em;
+    width: 100%;
+    font-size: large;
+}
+
+#contato p img{
+    width: 24px;
+    text-align: center;
+}
+
+#contato p a{
+    text-decoration: none;
+    color: var(--darkMagenta);
+}
+
+#contato p a:hover{    
+    color: var(--plum);
+}
+
+/*rodapé*/
+
+footer{
+    text-align: center;
+    padding: 5px;
+    background-color: var(--darkMagenta);
+    color: #fff;
+    box-shadow:  8px 8px 8px 8px rgba(0, 0, 0, 0.9);
+}
+
+footer a{
+    color: #fff;
+}
+
+@media screen and (min-width: 768px){
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+
+    header, #banner-dados{
+        height: 300px;
+        height: 30vh;
+        justify-content: center;
+    }
+
+    #dados{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #dados span{
+        text-align: center;
+        width: 100%;
+    }
+
+    #dados div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+
+    #sobre, #chatbot{
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+}
+
+/*Chat*/
+
+df-messenger {
+    --df-messenger-bot-message: var(--mediumOrchid);
+    --df-messenger-button-titlebar-color: var(--darkMagenta);
+    --df-messenger-chat-background-color: #fff;
+    --df-messenger-font-color: #fff;
+    --df-messenger-send-icon: var(--mediumVioletRed);
+    --df-messenger-input-box-color: var(--darkMagenta);
+    --df-messenger-input-placeholder-font-color: #fff;
+    --df-messenger-user-message: var(--mediumVioletRed);
+   }
