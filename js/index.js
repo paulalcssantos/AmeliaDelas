@@ -2,7 +2,7 @@ window.addEventListener("dfMessengerLoaded", function (event) {
     const dfMessenger = document.querySelector("df-messenger"); 
     const style = document.createElement("style");
 
-    const nonMobileMinWidth = 601;
+    const nonMobileMinWidth = 768;
 
     style.textContent = "@media screen and (min-width: " + nonMobileMinWidth + "px) { .chat-wrapper { max-height: 80% } }";
 
