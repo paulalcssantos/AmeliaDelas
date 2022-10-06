@@ -8,9 +8,6 @@ window.addEventListener("dfMessengerLoaded", function (event) {
 
     dfMessenger.shadowRoot.querySelector("df-messenger-chat").shadowRoot.appendChild(style);
 
-});
+})
 
-setTimeout(function(){ 
-    document.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector(".input-box-wrapper > input").placeholder="Mensagem" 
-    }, 
-1000);
+setTimeout(function(){ document.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector(".input-box-wrapper > input").placeholder="Mensagem" }, 1000);
