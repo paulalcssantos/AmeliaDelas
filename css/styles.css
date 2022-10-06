@@ -310,13 +310,9 @@ df-messenger {
     --df-messenger-button-titlebar-color: var(--darkMagenta);
     --df-messenger-chat-background-color: #fff;
     --df-messenger-font-color: #fff;
-    --df-messenger-send-icon: var(--mediumVioletRed);
+    --df-messenger-send-icon: var(--plum);
     --df-messenger-input-box-color: var(--darkMagenta);
-    --df-messenger-input-placeholder-font-color: #fff;
+    --df-messenger-input-placeholder-font-color: var(--plum);
+    --df-messenger-input-font-color: #fff;
     --df-messenger-user-message: var(--mediumVioletRed);
-    
-    margin: 0;
-    padding: 0;
-    right: 0;
-    bottom: -90px;
-   }
+}
